@@ -1,9 +1,45 @@
 <mvc:View controllerName="GithubSAP-UI5-Fiori-8_XMLModel.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:table="sap.ui.table">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
-				<content></content>
+				<content>
+					
+					<table:Table rows="{/studentdata/row}">
+						<table:columns>
+							
+							<table:Column>
+								<Label text="Student Name"></Label>
+								<table:template>
+									<Text text="{name}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student No"></Label>
+								<table:template>
+									<Text text="{no}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student Branch"></Label>
+								<table:template>
+									<Text text="{branch}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student CGPA"></Label>
+								<table:template>
+									<Text text="{cgpa}"></Text>
+								</table:template>
+							</table:Column>
+							
+						</table:columns>
+					</table:Table>
+					
+				</content>
 			</Page>
 		</pages>
 	</App>

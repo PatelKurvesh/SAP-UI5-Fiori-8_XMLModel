@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<data>
+	<studentdata>
+		<row>
+			<!--by default taking data in string form-->
+			<name>Kurvesh</name>    
+			<no>20012012037</no>
+			<branch>CE</branch>
+			<cgpa>8.91</cgpa>
+		</row>
+		
+		<row>
+			<name>Jay</name>
+			<no>20012012035</no>
+			<branch>IT</branch>
+			<cgpa>7.91</cgpa>
+		</row>
+	</studentdata>
+</data>
